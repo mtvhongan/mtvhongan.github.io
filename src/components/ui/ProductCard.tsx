@@ -1,8 +1,6 @@
 "use client";
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from './Button';
 
 export interface ProductCardProps {
   id: number;
@@ -24,26 +22,26 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   discountPercentage,
 }) => {
   return (
-    <div className="border border-gray-200 rounded-lg overflow-hidden bg-white relative group">
+    <div className="border border-gray-200 rounded overflow-hidden bg-white relative">
       {discountPercentage && (
-        <div className="absolute top-3 left-3 bg-red-500 text-white text-sm font-bold rounded-full w-10 h-10 flex items-center justify-center z-10">
+        <div className="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold rounded-full w-10 h-10 flex items-center justify-center z-10">
           -{discountPercentage}%
         </div>
       )}
       
-      <Link href={`/san-pham/${slug}`} className="block relative pt-[100%]">
-        <Image
-          src={image}
-          alt={name}
-          layout="fill"
-          objectFit="contain"
-          className="p-4 transition-transform group-hover:scale-105"
-        />
+      <Link href={`/san-pham/${slug}`} className="block">
+        <div className="p-4 flex justify-center h-48">
+          <img
+            src={image}
+            alt={name}
+            className="max-h-full object-contain transition-transform hover:scale-105"
+          />
+        </div>
       </Link>
       
       <div className="p-4">
-        <Link href={`/san-pham/${slug}`} className="block h-12 overflow-hidden">
-          <h3 className="font-medium text-gray-800 hover:text-blue-700 line-clamp-2">
+        <Link href={`/san-pham/${slug}`} className="block h-12">
+          <h3 className="text-blue-700 font-medium hover:text-blue-900 line-clamp-2">
             {name}
           </h3>
         </Link>
@@ -59,11 +57,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         </div>
         
         <div className="mt-3">
-          <Button
-            variant="cart"
-            fullWidth
+          <button
+            className="w-full bg-blue-800 text-white py-2 px-4 rounded flex items-center justify-center hover:bg-blue-900"
             onClick={() => {
-              // Handle add to cart logic
               console.log('Add to cart:', id);
             }}
           >
@@ -84,7 +80,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
             </svg>
             Thêm vào giỏ
-          </Button>
+          </button>
         </div>
       </div>
     </div>
