@@ -24,21 +24,27 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
+      - name: Debug - Show Next.js config
+        run: cat next.config.js
+
+      - name: Debug - Show package.json scripts
+        run: grep -A 10 '"scripts"' package.json
+
       - name: Build
+        run: npm run build
+        
+      - name: Static HTML export with Next.js
+        run: npm run export || echo "No export script found"
+
+      - name: Debug - Check directories after build
         run: |
-          npm run build
-      - name: Debug - Check build output
-        run: |
-          ls -la
           echo "Current directory structure:"
           find . -type d -maxdepth 2
           echo "Checking for 'out' directory:"
           [ -d "out" ] && echo "out directory exists" && ls -la out || echo "out directory does not exist"
-          echo "Checking for '.next' directory:"
-          [ -d ".next" ] && echo ".next directory exists" && ls -la .next || echo ".next directory does not exist"
-        
-      - name: Static HTML export with Next.js
-        run: npm run export || echo "No export script found"
+
+      - name: Create out directory if it doesn't exist
+        run: mkdir -p out
 
       - name: Create .nojekyll file
         run: touch out/.nojekyll
