@@ -36,9 +36,14 @@ jobs:
           mkdir -p out
           touch out/.nojekyll
 
+
+      - name: List output contents
+        run: ls -la out
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: out
           branch: gh-pages
           token: ${{ secrets.PAT }}
+          force: true
