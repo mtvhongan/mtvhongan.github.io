@@ -33,15 +33,17 @@ jobs:
       - name: Build
         run: npm run build
         
-      - name: Static HTML export with Next.js
-        run: npm run export || echo "No export script found"
-
-      - name: Debug - Check directories after build
+      - name: Check output directory
         run: |
-          echo "Current directory structure:"
-          find . -type d -maxdepth 2
-          echo "Checking for 'out' directory:"
-          [ -d "out" ] && echo "out directory exists" && ls -la out || echo "out directory does not exist"
+          if [ -d "out" ]; then
+            echo "Build successful - out directory exists"
+            ls -la out
+          else
+            echo "Build failed - out directory does not exist"
+            echo "Checking all directories:"
+            find . -maxdepth 2 -type d
+            exit 1
+          fi
 
       - name: Create out directory if it doesn't exist
         run: mkdir -p out
