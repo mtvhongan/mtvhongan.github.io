@@ -30,15 +30,13 @@ jobs:
       - name: Build
         run: |
           npm run build
-          touch ./out/.nojekyll
-      - name: Debug output directory
-        run: |
-          ls -la ./out
-          cat ./out/index.html || echo "No index.html found"
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+          touch out/.nojekyll
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          path: ./out
+          folder: out
+          branch: gh-pages
 
   deploy:
     environment:
