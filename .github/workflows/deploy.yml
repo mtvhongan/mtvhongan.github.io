@@ -41,10 +41,7 @@ jobs:
         run: npm run export || echo "No export script found"
 
       - name: Create .nojekyll file
-        run: |
-          mkdir -p out
-          touch out/.nojekyll
-
+        run: touch out/.nojekyll
 
       - name: List output contents
         run: ls -la out
