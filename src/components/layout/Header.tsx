@@ -1,8 +1,10 @@
 "use client";
 
 import React from 'react';
-import Link from 'next/link';
+
 import Image from 'next/image';
+import Link from 'next/link';
+
 import { CartIcon } from '../cart/CartIcon';
 
 export const Header: React.FC = () => {
@@ -12,11 +14,11 @@ export const Header: React.FC = () => {
         <div className="container mx-auto flex justify-between items-center">
           <div>Hotline: 0909 789 130 - 0707 148 148</div>
           <div className="flex space-x-4">
-            <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="YouTube"><i className="fab fa-youtube"></i></a>
-            <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
-            <a href="#" aria-label="TikTok"><i className="fab fa-tiktok"></i></a>
-            <a href="#" aria-label="Language"><span className="ml-2">EN</span></a>
+            <Link href="/" aria-label="Facebook"><i className="fab fa-facebook-f"></i></Link>
+            <Link href="/" aria-label="YouTube"><i className="fab fa-youtube"></i></Link>
+            <Link href="/" aria-label="Instagram"><i className="fab fa-instagram"></i></Link>
+            <Link href="/" aria-label="TikTok"><i className="fab fa-tiktok"></i></Link>
+            <Link href="/" aria-label="Language"><span className="ml-2">EN</span></Link>
           </div>
         </div>
       </div>

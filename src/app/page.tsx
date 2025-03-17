@@ -1,8 +1,9 @@
 import React from 'react';
-import { formatDate } from '@/lib/utils';
-import { HeroBanner } from '@/components/home/HeroBanner';
+
 import { BrandLogos } from '@/components/home/BrandLogos';
+import { HeroBanner } from '@/components/home/HeroBanner';
 import { ProductTabs } from '@/components/home/ProductTabs';
+import { formatDate } from '@/lib/utils';
 
 export default function Home() {
   const currentDate = formatDate(new Date());

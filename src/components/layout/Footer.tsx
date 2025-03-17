@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+
 import Link from 'next/link';
 
 export const Footer: React.FC = () => {
@@ -14,18 +15,18 @@ export const Footer: React.FC = () => {
             <p className="mb-2">Tel: 0909 789 130 - 0707 148 148</p>
             <p className="mb-2">Email: info@hongan.vn</p>
             <div className="flex mt-4 space-x-3">
-              <a href="#" className="bg-blue-700 p-2 rounded-full">
+              <Link href="#" className="bg-blue-700 p-2 rounded-full">
                 <i className="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" className="bg-blue-700 p-2 rounded-full">
+              </Link>
+              <Link href="#" className="bg-blue-700 p-2 rounded-full">
                 <i className="fab fa-youtube"></i>
-              </a>
-              <a href="#" className="bg-blue-700 p-2 rounded-full">
+              </Link>
+              <Link href="#" className="bg-blue-700 p-2 rounded-full">
                 <i className="fab fa-instagram"></i>
-              </a>
-              <a href="#" className="bg-blue-700 p-2 rounded-full">
+              </Link>
+              <Link href="#" className="bg-blue-700 p-2 rounded-full">
                 <i className="fab fa-tiktok"></i>
-              </a>
+              </Link>
             </div>
           </div>
           

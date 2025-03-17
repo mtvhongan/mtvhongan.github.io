@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+
 import { ProductCard } from '../ui/ProductCard';
 
 export const ProductTabs: React.FC = () => {
