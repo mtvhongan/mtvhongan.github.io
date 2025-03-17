@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '',
+  basePath: '/mtvhongan',
+  assetPrefix: '/mtvhongan/', // Important for static assets
+  trailingSlash: true, // Recommended for static exports
   reactStrictMode: true,
   images: {
     domains: ['placehold.co'],
