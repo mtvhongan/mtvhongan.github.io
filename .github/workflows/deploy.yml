@@ -39,6 +39,7 @@ jobs:
         with:
           folder: out
           branch: gh-pages
+          token: ${{ secrets.PAT }}
 
   deploy:
     environment:
