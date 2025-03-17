@@ -7,8 +7,8 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Hồng Ân - Nhà cung cấp máy móc nông nghiệp, xây dựng và thiết bị hàng đầu',
-  description: 'Hồng Ân cung cấp các loại máy móc nông nghiệp, thiết bị xây dựng, dụng cụ điện và nhiều sản phẩm chất lượng cao khác với giá cả cạnh tranh.',
+  title: 'Hồng An - Nhà cung cấp máy móc nông nghiệp, xây dựng và thiết bị hàng đầu',
+  description: 'Hồng An cung cấp các loại máy móc nông nghiệp, thiết bị xây dựng, dụng cụ điện và nhiều sản phẩm chất lượng cao khác với giá cả cạnh tranh.',
 };
 
 export default function RootLayout({

@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">HỒNG ÂN CO., LTD</h3>
+            <h3 className="text-xl font-bold mb-4">HỒNG AN CO., LTD</h3>
             <p className="mb-2">Add: 123 Example Street, District, City</p>
             <p className="mb-2">Tel: 0909 789 130 - 0707 148 148</p>
             <p className="mb-2">Email: info@hongan.vn</p>
@@ -54,7 +54,7 @@ export const Footer: React.FC = () => {
         </div>
         
         <div className="border-t border-blue-700 mt-8 pt-5 text-center">
-          <p>© 2023 Hồng Ân Co., Ltd. All Rights Reserved.</p>
+          <p>© 2023 Hồng An Co., Ltd. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

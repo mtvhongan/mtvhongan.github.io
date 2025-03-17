@@ -28,7 +28,7 @@ export const Header: React.FC = () => {
           <div className="relative h-16 w-48">
             <Image 
               src="/logo.png" 
-              alt="Hồng Ân Logo" 
+              alt="Hồng An Logo" 
               fill
               className="object-contain cursor-pointer"
             />

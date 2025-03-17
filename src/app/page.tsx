@@ -21,7 +21,7 @@ export default function Home() {
           <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
             <div className="text-center mb-8">
               <h2 className="text-2xl font-bold text-blue-800 mb-2">
-                Về Công Ty MTV Hồng Ân
+                Về Công Ty MTV Hồng An
               </h2>
               <p className="text-gray-600 max-w-3xl mx-auto">
                 Chúng tôi tự hào là nhà cung cấp máy móc, thiết bị nông nghiệp, xây dựng và công nghiệp hàng đầu với hơn 10 năm kinh nghiệm.
