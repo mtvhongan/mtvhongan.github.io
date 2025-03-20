@@ -12,7 +12,7 @@ export const Header: React.FC = () => {
     <header>
       <div className="bg-blue-800 text-white p-2">
         <div className="container mx-auto flex justify-between items-center">
-          <div>Hotline: 0909 789 130 - 0707 148 148</div>
+          <div>Hotline: 0938 329 789</div>
           <div className="flex space-x-4">
             <Link href="/" aria-label="Facebook"><i className="fab fa-facebook-f"></i></Link>
             <Link href="/" aria-label="YouTube"><i className="fab fa-youtube"></i></Link>
