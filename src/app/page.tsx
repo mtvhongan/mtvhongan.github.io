@@ -1,12 +1,12 @@
 import React from 'react';
 
 
-import { Footer } from '@/components/layout/Footer';
 import { BrandLogos } from '@/components/home/BrandLogos';
 import { HeroBanner } from '@/components/home/HeroBanner';
 import { ProductTabs } from '@/components/home/ProductTabs';
-import { formatDate } from '@/lib/utils';
+import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
+import { formatDate } from '@/lib/utils';
 
 export default function Home() {
   const currentDate = formatDate(new Date());
