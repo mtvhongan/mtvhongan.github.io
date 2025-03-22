@@ -14,21 +14,21 @@ export const HeroBanner: React.FC = () => {
   const slides: Slide[] = [
     {
       id: 1,
-      imageUrl: 'https://placehold.co/1200x400/blue/white?text=Construction+Equipment+Promotion',
-      alt: 'Construction equipment promotion',
-      link: '/promotion/construction',
+      imageUrl: 'https://placehold.co/1200x400/orange/white?text=Thiết+bị+tự+động+hóa',
+      alt: 'Thiết bị tự động hóa',
+      link: '/may-moc-thiet-bi',
     },
     {
       id: 2,
-      imageUrl: 'https://placehold.co/1200x400/green/white?text=Agricultural+Machinery',
-      alt: 'Agricultural machinery',
-      link: '/may-nong-nghiep',
+      imageUrl: 'https://placehold.co/1200x400/blue/white?text=Máy+xây+dựng',
+      alt: 'Máy xây dựng',
+      link: '/promotion/construction',
     },
     {
       id: 3,
-      imageUrl: 'https://placehold.co/1200x400/orange/white?text=Power+Tools+Collection',
-      alt: 'Power tools collection',
-      link: '/may-moc-thiet-bi',
+      imageUrl: 'https://placehold.co/1200x400/green/white?text=Máy+nông+nghiệp',
+      alt: 'Máy nông nghiệp',
+      link: '/may-nong-nghiep',
     },
   ];
 

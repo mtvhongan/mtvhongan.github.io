@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">MTV HỒNG AN</h3>
             <p className="mb-2">Địa chỉ: 88/4 Phan Đăng Lưu, Phường 05, Quận Phú Nhuận, TP. HCM</p>
-            <p className="mb-2">Tel: 0938 329 789</p>
+            <p className="mb-2">Tel: 0328162203</p>
             <p className="mb-2">Email:</p>
             <p className="mb-2">Giờ làm việc: Thứ 2 - Thứ 7: 8:00 - 17:30</p>
             <div className="flex mt-4 space-x-3">

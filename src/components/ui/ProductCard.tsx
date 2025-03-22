@@ -49,13 +49,14 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         </Link>
         
         <div className="mt-2">
-          <div className="text-blue-700 font-bold">{price.toLocaleString()}đ</div>
+          {/* <div className="text-blue-700 font-bold">{price.toLocaleString()}đ</div> */}
+          <div className="text-blue-700 font-bold">Liên hệ</div>
           
-          {originalPrice && (
+          {/* {originalPrice && (
             <div className="text-gray-500 line-through text-sm">
               {originalPrice.toLocaleString()}đ
             </div>
-          )}
+          )} */}
         </div>
         
         <div className="mt-3">
