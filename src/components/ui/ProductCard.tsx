@@ -19,8 +19,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   name,
   slug,
   image,
-  price,
-  originalPrice,
   discountPercentage,
 }) => {
   return (
