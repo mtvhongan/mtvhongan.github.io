@@ -53,7 +53,7 @@ export const AgriculturalBenefits: React.FC = () => {
                 <p className="text-sm text-gray-600">Nông dân, Đồng Tháp</p>
               </div>
             </div>
-            <p className="text-gray-700">"Máy gặt đập liên hợp đã giúp tôi thu hoạch 5 hecta lúa chỉ trong 1 ngày, tiết kiệm rất nhiều thời gian và công sức so với trước đây."</p>
+            <p className="text-gray-700">&quot;Máy gặt đập liên hợp đã giúp tôi thu hoạch 5 hecta lúa chỉ trong 1 ngày, tiết kiệm rất nhiều thời gian và công sức so với trước đây.&quot;</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-sm">
             <div className="flex items-center mb-4">
@@ -65,7 +65,7 @@ export const AgriculturalBenefits: React.FC = () => {
                 <p className="text-sm text-gray-600">Chủ trang trại, An Giang</p>
               </div>
             </div>
-            <p className="text-gray-700">"Chất lượng máy móc rất tốt, dịch vụ hậu mãi chu đáo. Đội ngũ kỹ thuật hỗ trợ tận tình giúp tôi vận hành máy hiệu quả."</p>
+            <p className="text-gray-700">&quot;Chất lượng máy móc rất tốt, dịch vụ hậu mãi chu đáo. Đội ngũ kỹ thuật hỗ trợ tận tình giúp tôi vận hành máy hiệu quả.&quot;</p>
           </div>
         </div>
       </div>

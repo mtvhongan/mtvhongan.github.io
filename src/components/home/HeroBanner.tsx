@@ -69,7 +69,12 @@ export const HeroBanner: React.FC = () => {
         {slides.map((slide) => (
           <div key={slide.id} className="min-w-full h-full relative">
             <div 
+              role="button"
+              tabIndex={0}
               onClick={() => handleSlideClick(slide.link)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") handleSlideClick(slide.link);
+              }}
               className="cursor-pointer w-full h-full"
             >
               <img 

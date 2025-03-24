@@ -1,8 +1,9 @@
 "use client";
 
 import React from 'react';
-import AgriculturalMachineryLayout from './AgriculturalMachineryLayout';
+
 import { AgriculturalBenefits } from './AgriculturalBenefits';
+import AgriculturalMachineryLayout from './AgriculturalMachineryLayout';
 
 interface AgriculturalMachine {
   id: number;
