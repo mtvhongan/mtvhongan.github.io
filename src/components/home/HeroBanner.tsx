@@ -26,7 +26,7 @@ export const HeroBanner: React.FC = () => {
       id: 2,
       imageUrl: 'https://placehold.co/1200x400/blue/white?text=Máy+xây+dựng',
       alt: 'Máy xây dựng',
-      link: '/promotion/construction',
+      link: '/may-xay-dung',
     },
     {
       id: 3,

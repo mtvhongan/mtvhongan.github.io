@@ -37,12 +37,12 @@ export const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">DANH MỤC SẢN PHẨM</h3>
             <ul className="space-y-2">
-              <li><Link href="/may-cat-co" className="hover:text-green-300 transition duration-300">Máy cắt cỏ</Link></li>
-              <li><Link href="/may-phun-thuoc" className="hover:text-green-300 transition duration-300">Máy phun thuốc</Link></li>
-              <li><Link href="/may-bom-nuoc" className="hover:text-green-300 transition duration-300">Máy bơm nước</Link></li>
-              <li><Link href="/may-xoi-dat" className="hover:text-green-300 transition duration-300">Máy xới đất</Link></li>
+              <li><Link href="/may-moc-thiet-bi" className="hover:text-green-300 transition duration-300">Thiết bị tự động hóa</Link></li>
+              <li><Link href="/may-xay-dung" className="hover:text-green-300 transition duration-300">Máy xây dựng</Link></li>
+              <li><Link href="/may-nong-nghiep" className="hover:text-green-300 transition duration-300">Máy nông nghiệp</Link></li>
+              {/* <li><Link href="/may-xoi-dat" className="hover:text-green-300 transition duration-300">Máy xới đất</Link></li>
               <li><Link href="/may-khoan" className="hover:text-green-300 transition duration-300">Máy khoan</Link></li>
-              <li><Link href="/phu-kien" className="hover:text-green-300 transition duration-300">Phụ kiện & phụ tùng</Link></li>
+              <li><Link href="/phu-kien" className="hover:text-green-300 transition duration-300">Phụ kiện & phụ tùng</Link></li> */}
             </ul>
           </div>
           
