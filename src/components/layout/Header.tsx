@@ -10,7 +10,7 @@ import { CartIcon } from '../cart/CartIcon';
 export const Header: React.FC = () => {
   return (
     <header>
-      <div className="bg-blue-800 text-white p-2">
+      <div className="bg-blue-900 text-white p-2">
         <div className="container mx-auto flex justify-between items-center">
           <div>Hotline: 0328 162 203</div>
           <div className="flex space-x-4">
@@ -88,7 +88,7 @@ export const Header: React.FC = () => {
         </div>
       </div>
       
-      <nav className="bg-blue-700 text-white">
+      <nav className="bg-blue-900 text-white">
         <div className="container mx-auto">
           <ul className="flex">
             <li className="px-4 py-3 hover:bg-blue-800"><Link href="/">TRANG CHỦ</Link></li>
