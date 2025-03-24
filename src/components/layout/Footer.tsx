@@ -58,13 +58,15 @@ export const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-4">CHÍNH SÁCH</h3>
+            <h3 className="text-xl font-bold mb-4">
+              <Link href="/chinh-sach" className="hover:text-green-300 transition duration-300">CHÍNH SÁCH</Link>
+            </h3>
             <ul className="space-y-2">
-              <li><Link href="/chinh-sach-thanh-toan" className="hover:text-green-300 transition duration-300">Chính sách thanh toán</Link></li>
-              <li><Link href="/chinh-sach-van-chuyen" className="hover:text-green-300 transition duration-300">Chính sách vận chuyển</Link></li>
-              <li><Link href="/chinh-sach-bao-hanh" className="hover:text-green-300 transition duration-300">Chính sách bảo hành</Link></li>
-              <li><Link href="/chinh-sach-doi-tra" className="hover:text-green-300 transition duration-300">Chính sách đổi trả</Link></li>
-              <li><Link href="/chinh-sach-bao-mat" className="hover:text-green-300 transition duration-300">Chính sách bảo mật</Link></li>
+            <li><Link href="/chinh-sach/thanh-toan" className="hover:text-green-300 transition duration-300">Chính sách thanh toán</Link></li>
+            <li><Link href="/chinh-sach/van-chuyen" className="hover:text-green-300 transition duration-300">Chính sách vận chuyển</Link></li>
+            <li><Link href="/chinh-sach/bao-hanh" className="hover:text-green-300 transition duration-300">Chính sách bảo hành</Link></li>
+            <li><Link href="/chinh-sach/doi-tra" className="hover:text-green-300 transition duration-300">Chính sách đổi trả</Link></li>
+            <li><Link href="/chinh-sach/bao-mat" className="hover:text-green-300 transition duration-300">Chính sách bảo mật</Link></li>
             </ul>
           </div>
         </div>
