@@ -3,7 +3,7 @@
 import React from 'react';
 
 import { AgriculturalBenefits } from './AgriculturalBenefits';
-import AgriculturalMachineryLayout from './AgriculturalMachineryLayout';
+import { AgriculturalMachineryLayout } from './AgriculturalMachineryLayout';
 import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
 
