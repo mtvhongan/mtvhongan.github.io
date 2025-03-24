@@ -1,7 +1,10 @@
 "use client";
 
 import React from 'react';
+
 import AutomationEquipmentLayout from './AutomationEquipmentLayout';
+import { Footer } from '@/components/layout/Footer';
+import { Header } from '@/components/layout/Header';
 
 interface Product {
   id: number;
@@ -50,45 +53,49 @@ export const AutomationEquipmentPage: React.FC = () => {
   ];
 
   return (
-    <AutomationEquipmentLayout>
-      {/* Products Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-        {products.map((item) => (
-          <div key={item.id} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
-            <div className="relative">
-              <img 
-                src={item.imageUrl} 
-                alt={item.name} 
-                className="w-full h-48 object-cover"
-              />
-              <span className={`absolute top-2 right-2 text-xs px-2 py-1 rounded ${
-                item.inStock 
-                  ? 'bg-green-600 text-white' 
-                  : 'bg-gray-200 text-gray-600'
-              }`}>
-                {item.inStock ? 'Còn hàng' : 'Hết hàng'}
-              </span>
-            </div>
-            <div className="p-4">
-              <h3 className="font-semibold text-lg mb-1 text-gray-800">{item.name}</h3>
-              <p className="text-gray-600 text-sm mb-4 line-clamp-2">{item.description}</p>
-              <div className="flex justify-between items-center">
-                <span className="text-green-600 font-bold">
-                  {item.price.toLocaleString('vi-VN')} đ
+    <>
+      <Header />
+      <AutomationEquipmentLayout>
+        {/* Products Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          {products.map((item) => (
+            <div key={item.id} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+              <div className="relative">
+                <img 
+                  src={item.imageUrl} 
+                  alt={item.name} 
+                  className="w-full h-48 object-cover"
+                />
+                <span className={`absolute top-2 right-2 text-xs px-2 py-1 rounded ${
+                  item.inStock 
+                    ? 'bg-green-600 text-white' 
+                    : 'bg-gray-200 text-gray-600'
+                }`}>
+                  {item.inStock ? 'Còn hàng' : 'Hết hàng'}
                 </span>
-                <button className={`px-3 py-2 rounded text-sm font-medium ${
-                  item.inStock
-                    ? 'bg-green-600 hover:bg-green-700 text-white'
-                    : 'bg-gray-200 text-gray-500 cursor-not-allowed'
-                }`} disabled={!item.inStock}>
-                  {item.inStock ? 'Đặt hàng' : 'Tạm hết hàng'}
-                </button>
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold text-lg mb-1 text-gray-800">{item.name}</h3>
+                <p className="text-gray-600 text-sm mb-4 line-clamp-2">{item.description}</p>
+                <div className="flex justify-between items-center">
+                  <span className="text-green-600 font-bold">
+                    {item.price.toLocaleString('vi-VN')} đ
+                  </span>
+                  <button className={`px-3 py-2 rounded text-sm font-medium ${
+                    item.inStock
+                      ? 'bg-green-600 hover:bg-green-700 text-white'
+                      : 'bg-gray-200 text-gray-500 cursor-not-allowed'
+                  }`} disabled={!item.inStock}>
+                    {item.inStock ? 'Đặt hàng' : 'Tạm hết hàng'}
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </AutomationEquipmentLayout>
+          ))}
+        </div>
+      </AutomationEquipmentLayout>
+      <Footer />
+    </>
   );
 };
 
