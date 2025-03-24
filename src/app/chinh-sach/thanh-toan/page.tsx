@@ -15,7 +15,7 @@ export default function PaymentPolicyPage() {
   return (
     <>
       <Header />
-      <PolicyLayout activePolicyId="thanh-toan">
+      <PolicyLayout activePolicyId="thanh-toan" disable>
         <div className="bg-white p-8 rounded-lg shadow">
           <h1 className="text-3xl font-bold text-gray-900 mb-6">Chính Sách Thanh Toán</h1>
           
