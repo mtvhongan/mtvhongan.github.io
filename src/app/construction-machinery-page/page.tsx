@@ -16,7 +16,7 @@ interface ConstructionMachine {
   rentalAvailable: boolean;
 }
 
-export const ConstructionMachineryPage: React.FC = () => {
+export default function ConstructionMachineryPage() {
   // Sample product data
   const machines: ConstructionMachine[] = [
     {
@@ -100,5 +100,3 @@ export const ConstructionMachineryPage: React.FC = () => {
     </>
   );
 };
-
-export default ConstructionMachineryPage;

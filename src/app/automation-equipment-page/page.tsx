@@ -15,7 +15,7 @@ interface Product {
   inStock?: boolean;
 }
 
-export const AutomationEquipmentPage: React.FC = () => {
+export default function AutomationEquipmentPage() {
   // Sample product data
   const products: Product[] = [
     {
@@ -98,5 +98,3 @@ export const AutomationEquipmentPage: React.FC = () => {
     </>
   );
 };
-
-export default AutomationEquipmentPage;

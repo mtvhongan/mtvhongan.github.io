@@ -3,7 +3,7 @@
 import React from 'react';
 
 import { AgriculturalBenefits } from './AgriculturalBenefits';
-import { AgriculturalMachineryLayout } from './AgriculturalMachineryLayout';
+import { default as AgriculturalMachineryLayout } from './AgriculturalMachineryLayout';
 import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
 
@@ -16,7 +16,7 @@ interface Machine {
   inStock: boolean;
 }
 
-export const AgriculturalMachineryPage: React.FC = () => {
+export default function AgriculturalMachineryPage() {
   // Sample machine data
   const machines: Machine[] = [
     {
@@ -77,6 +77,4 @@ export const AgriculturalMachineryPage: React.FC = () => {
       <Footer />
     </>
   );
-};
-
-export default AgriculturalMachineryPage;
+}
