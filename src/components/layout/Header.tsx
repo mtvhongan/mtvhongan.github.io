@@ -12,13 +12,13 @@ export const Header: React.FC = () => {
     <header>
       <div className="bg-blue-800 text-white p-2">
         <div className="container mx-auto flex justify-between items-center">
-          <div>Hotline: 0938 329 789</div>
+          <div>Hotline: 0328 162 203</div>
           <div className="flex space-x-4">
-            <Link href="/" aria-label="Facebook"><i className="fab fa-facebook-f"></i></Link>
-            <Link href="/" aria-label="YouTube"><i className="fab fa-youtube"></i></Link>
+            <Link href="https://www.facebook.com/61573520043885" aria-label="Facebook"><i className="fab fa-facebook-f"></i></Link>
+            {/* <Link href="/" aria-label="YouTube"><i className="fab fa-youtube"></i></Link>
             <Link href="/" aria-label="Instagram"><i className="fab fa-instagram"></i></Link>
-            <Link href="/" aria-label="TikTok"><i className="fab fa-tiktok"></i></Link>
-            <Link href="/" aria-label="Language"><span className="ml-2">EN</span></Link>
+            <Link href="/" aria-label="TikTok"><i className="fab fa-tiktok"></i></Link> */ }
+            <Link href="/" aria-label="Language"><span className="ml-2">VI</span></Link> 
           </div>
         </div>
       </div>
@@ -27,9 +27,10 @@ export const Header: React.FC = () => {
         <Link href="/">
           <div className="relative h-16 w-48">
             <Image 
-              src="/logo.png" 
+              src="https://gist.github.com/user-attachments/assets/b4d18dbb-52bd-4ba9-b636-a466ab81bc52" 
               alt="Hồng An Logo" 
               fill
+              style={{ transform: 'scale(1.5)', transformOrigin: 'center' }}
               className="object-contain cursor-pointer"
             />
           </div>
