@@ -20,7 +20,7 @@ export const HeroBanner: React.FC = () => {
       id: 1,
       imageUrl: 'https://placehold.co/1200x400/orange/white?text=Thiết+bị+tự+động+hóa',
       alt: 'Thiết bị tự động hóa',
-      link: '/may-moc-thiet-bi',
+      link: '/may-tu-dong',
     },
     {
       id: 2,

@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
+
 const nextConfig = {
   output: 'export',
   assetPrefix: '/',
@@ -26,26 +30,4 @@ const nextConfig = {
   },
 };
 
-// Add redirects
-nextConfig.redirects = async () => {
-  return [
-    {
-      source: '/may-moc-thiet-bi',
-      destination: '/automation-equipment-page',
-      permanent: true,
-    },
-    {
-      source: '/may-xay-dung',
-      destination: '/construction-machinery-page',
-      permanent: true,
-    },
-    {
-      source: '/may-nong-nghiep',
-      destination: '/agricultural-machinery-page',
-      permanent: true,
-    },
-  ];
-};
-
-
-module.exports = nextConfig;
+module.exports = withBundleAnalyzer(nextConfig);
