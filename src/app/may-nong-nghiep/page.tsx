@@ -20,13 +20,13 @@ export default function AgriculturalMachineryPage() {
   // Sample machine data
   const machines: Machine[] = [
     {
-      id: 1,
-      name: 'Máy cày KUBOTA L5018',
-      imageUrl: 'https://placehold.co/300x300/green/white?text=KUBOTA+L5018',
-      price: 320000000,
-      description: 'Máy cày đa năng KUBOTA L5018 với công suất 50HP, hệ thống thủy lực mạnh mẽ và tiết kiệm nhiên liệu.',
-      inStock: true,
-    },
+      "id": 1,
+      "name": "Máy cày John Deere 5045E",
+      "imageUrl": "https://placehold.co/300x300/green/white?text=John+Deere+5045E",
+      "price": 350000000,
+      "description": "Máy cày đa năng John Deere 5045E với công suất 45HP, thiết kế hiện đại và hiệu suất cao, phù hợp cho các nông trại và hoạt động nông nghiệp chuyên nghiệp.",
+      "inStock": true
+    }
     // ... other machines data
   ];
   
