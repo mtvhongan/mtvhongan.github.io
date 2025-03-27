@@ -4,15 +4,25 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:static": "EXPORT_MODE=static next dev",
     "build": "next build",
+    "build:static": "EXPORT_MODE=static next build",
     "start": "next start",
+    "start:static": "EXPORT_MODE=static next build && next start",
     "lint": "next lint",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "db:start": "docker-compose up -d",
+    "db:stop": "docker-compose down",
+    "prisma:generate": "prisma generate --schema=./prisma/auth.prisma",
+    "prisma:migrate": "prisma migrate dev --schema=./prisma/auth.prisma",
+    "prisma:studio": "prisma studio --schema=./prisma/auth.prisma"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^15.2.3",
+    "@prisma/client": "^6.5.0",
     "@tailwindcss/postcss": "^4.0.14",
     "autoprefixer": "^10.4.21",
+    "jsonwebtoken": "^9.0.2",
     "next": "^14.2.24",
     "postcss": "^8.5.3",
     "react": "18.2.0",
@@ -20,6 +30,8 @@
     "tailwindcss": "^4.0.14"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "20.10.5",
     "@types/react": "18.2.45",
     "@types/react-dom": "18.2.18",
@@ -31,6 +43,7 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.2.0",
+    "prisma": "^6.5.0",
     "typescript": "5.3.3"
   }
 }

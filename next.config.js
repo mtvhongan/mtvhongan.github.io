@@ -3,8 +3,21 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
 
+// Read deployment mode from environment variable or use default
+const isStaticExport = process.env.EXPORT_MODE === 'static';
+
 const nextConfig = {
-  output: 'export',
+  // Conditionally apply output: 'export' only when static mode is enabled
+  ...(isStaticExport && {
+    output: 'export',
+    // Any other static-specific configurations
+  }),
+
+  // You can add dynamic-specific configurations here
+  ...(!isStaticExport && {
+    // Any configurations specific to dynamic mode with backend
+  }),
+
   assetPrefix: '/',
   trailingSlash: true, // Recommended for static exports
   reactStrictMode: true,
