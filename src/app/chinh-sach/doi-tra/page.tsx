@@ -207,10 +207,10 @@ export default function ReturnPolicyPage() {
             </p>
             
             <ul className="list-disc pl-6 space-y-2 mb-8">
-              <li>Hotline đổi trả: 1800 9876 (miễn phí cuộc gọi)</li>
-              <li>Email: returns@yourcompany.com</li>
+              <li>Hotline đổi trả: 0328162203</li>
+              <li>Email: mtvhongan@gmail.com</li>
               <li>Giờ làm việc: 8:00 - 17:30, Thứ 2 - Thứ 6</li>
-              <li>Địa chỉ tiếp nhận đổi trả: 123 Nguyễn Văn Linh, Quận 7, TP.HCM</li>
+              {/* <li>Địa chỉ tiếp nhận đổi trả: 123 Nguyễn Văn Linh, Quận 7, TP.HCM</li> */}
             </ul>
           </div>
         </div>

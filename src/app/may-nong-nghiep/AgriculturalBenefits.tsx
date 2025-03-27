@@ -76,7 +76,7 @@ export const AgriculturalBenefits: React.FC = () => {
         <p className="mb-6">Liên hệ với chúng tôi ngay hôm nay để được hỗ trợ tốt nhất</p>
         <div className="flex justify-center space-x-4">
           <button className="bg-white text-green-600 px-6 py-3 rounded-lg font-medium hover:bg-green-50 transition">
-            Gọi ngay: 1800 1234
+            Gọi ngay: 0328162203
           </button>
           <button className="border border-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition">
             Gửi yêu cầu tư vấn

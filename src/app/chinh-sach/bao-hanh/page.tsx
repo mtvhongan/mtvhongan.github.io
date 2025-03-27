@@ -214,8 +214,8 @@ export default function WarrantyPolicyPage() {
             </p>
             
             <ul className="list-disc pl-6 space-y-2 mb-8">
-              <li>Hotline bảo hành: 1800 1234 (miễn phí cuộc gọi)</li>
-              <li>Email: warranty@yourcompany.com</li>
+              <li>Hotline bảo hành: 0328162203</li>
+              <li>Email: mtvhongan@gmail.com</li>
               <li>Giờ làm việc: 7:30 - 18:00, Thứ 2 - Thứ 7</li>
             </ul>
           </div>
