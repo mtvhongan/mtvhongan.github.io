@@ -93,6 +93,14 @@ export const Header: React.FC = () => {
           <ul className="flex">
             <li className="px-4 py-3 hover:bg-blue-800"><Link href="/">TRANG CHỦ</Link></li>
             <li className="px-4 py-3 hover:bg-blue-800 relative group">
+              <Link href="/tin-tuc" className="flex items-center">
+                TIN TỨC
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </Link>
+            </li>
+            <li className="px-4 py-3 hover:bg-blue-800 relative group">
               <Link href="/may-nong-nghiep" className="flex items-center">
                 MÁY NÔNG NGHIỆP
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -116,16 +124,8 @@ export const Header: React.FC = () => {
                 </svg>
               </Link>
             </li>
-            <li className="px-4 py-3 hover:bg-blue-800"><Link href="/he-thong-dai-ly">HỆ THỐNG ĐẠI LÝ</Link></li>
+            {/* <li className="px-4 py-3 hover:bg-blue-800"><Link href="/he-thong-dai-ly">HỆ THỐNG ĐẠI LÝ</Link></li> */}
             <li className="px-4 py-3 hover:bg-blue-800"><Link href="/lien-he">LIÊN HỆ</Link></li>
-            <li className="px-4 py-3 hover:bg-blue-800 relative group">
-              <Link href="/tin-tuc" className="flex items-center">
-                TIN TỨC
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </Link>
-            </li>
           </ul>
         </div>
       </nav>
