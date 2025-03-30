@@ -37,7 +37,7 @@ export default function ContactPage() {
                       </svg>
                     </div>
                     <div className="ml-3 text-base text-gray-500">
-                      <p>+ 84 (0) 123 456 789</p>
+                      <p>0328 162 203</p>
                       <p className="mt-1">Thứ 2 - Thứ 6, 8:00 - 17:00</p>
                     </div>
                   </div>
@@ -48,7 +48,7 @@ export default function ContactPage() {
                       </svg>
                     </div>
                     <div className="ml-3 text-base text-gray-500">
-                      <p>info@yourcompany.com</p>
+                      <p>mtvhongan@gmail.com</p>
                     </div>
                   </div>
                   <div className="mt-6 flex">
@@ -59,20 +59,21 @@ export default function ContactPage() {
                       </svg>
                     </div>
                     <div className="ml-3 text-base text-gray-500">
-                      <p>123 Nguyễn Văn Linh, Quận 7</p>
+                      <p>88/4 Phan Đăng Lưu, Phường 05, Quận Phú Nhuận</p>
                       <p className="mt-1">Thành Phố Hồ Chí Minh, Việt Nam</p>
                     </div>
                   </div>
+                  {/* Social media  */}
                   <div className="mt-8">
                     <h3 className="text-lg font-medium text-gray-900">Kết nối với chúng tôi</h3>
                     <div className="mt-4 flex space-x-6">
-                      <Link href="#" className="text-gray-400 hover:text-gray-500">
+                      <Link href="https://www.facebook.com/61573520043885" className="text-gray-400 hover:text-gray-500">
                         <span className="sr-only">Facebook</span>
                         <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
                         </svg>
                       </Link>
-                      <Link href="#" className="text-gray-400 hover:text-gray-500">
+                      {/* <Link href="#" className="text-gray-400 hover:text-gray-500">
                         <span className="sr-only">YouTube</span>
                         <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path fillRule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clipRule="evenodd" />
@@ -83,7 +84,7 @@ export default function ContactPage() {
                         <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path fillRule="evenodd" d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" clipRule="evenodd" />
                         </svg>
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>
