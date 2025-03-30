@@ -25,9 +25,9 @@ export const Header: React.FC = () => {
       
       <div className="container mx-auto py-3 flex items-center justify-between">
         <Link href="/">
-          <div className="relative h-16 w-48">
+          <div className="relative h-20 w-60">
             <Image 
-              src="https://gist.github.com/user-attachments/assets/b4d18dbb-52bd-4ba9-b636-a466ab81bc52" 
+              src="https://gist.github.com/user-attachments/assets/bb0b8243-a208-4e09-872a-2e2a474ec2fa" 
               alt="Hồng An Logo" 
               fill
               style={{ transform: 'scale(1.5)', transformOrigin: 'center' }}

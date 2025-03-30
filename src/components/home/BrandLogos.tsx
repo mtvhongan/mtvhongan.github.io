@@ -12,7 +12,7 @@ interface Brand {
 export const BrandLogos: React.FC = () => {
   // Example brands data
   const brands: Brand[] = [
-    { id: 1, name: 'Honda', logoUrl: 'https://placehold.co/100x40/red/white?text=HONDA', link: '/brands/honda' },
+    // { id: 1, name: 'Honda', logoUrl: 'https://placehold.co/100x40/red/white?text=HONDA', link: '/brands/honda' },
     { id: 2, name: 'Hyundai', logoUrl: 'https://placehold.co/100x40/blue/white?text=HYUNDAI', link: '/brands/hyundai' },
     { id: 3, name: 'Kasei', logoUrl: 'https://placehold.co/100x40/green/white?text=KASEI', link: '/brands/kasei' },
     { id: 4, name: 'Mitsu Power', logoUrl: 'https://placehold.co/100x40/orange/white?text=MITSU+POWER', link: '/brands/mitsu-power' },
