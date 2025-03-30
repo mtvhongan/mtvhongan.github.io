@@ -1,35 +1,21 @@
-// src/lib/auth/jwt-utils-safe.ts
-import jwt from 'jsonwebtoken';
+import * as jose from 'jose'; // Import jose library
 
-// Environment check
-const isStaticExport = process.env.EXPORT_MODE === 'static';
+// Your secret key and types
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key';
+const isStaticExport = process.env.NEXT_STATIC_EXPORT === 'true';
 
-export type JwtPayload = {
+// Define the JWT payload type
+type JwtPayload = {
   userId: number;
   email: string;
   roles: string[];
   permissions?: string[];
-  iat?: number;
-  exp?: number;
 };
 
 /**
- * Generate JWT token
+ * Verify a JWT token using jose library (Edge Runtime compatible)
  */
-export function generateToken(payload: Omit<JwtPayload, 'iat' | 'exp'>) {
-  if (isStaticExport) {
-    console.warn('Token generation attempted in static export mode');
-    return 'static-mode-placeholder-token';
-  }
-  
-  return jwt.sign(payload, JWT_SECRET, { expiresIn: '1h' });
-}
-
-/**
- * Verify JWT token
- */
-export function verifyToken(token: string): JwtPayload | null {
+export async function verifyToken(token: string): Promise<JwtPayload | null> {
   if (isStaticExport) {
     // In static mode, just return a dummy payload
     return {
@@ -41,9 +27,38 @@ export function verifyToken(token: string): JwtPayload | null {
   }
   
   try {
-    return jwt.verify(token, JWT_SECRET) as JwtPayload;
+    // Convert the secret to Uint8Array for jose
+    const secretKey = new TextEncoder().encode(JWT_SECRET);
+    
+    // Verify the token
+    const { payload } = await jose.jwtVerify(token, secretKey);
+    
+    // Cast and return the payload
+    return payload as unknown as JwtPayload;
   } catch (error) {
     console.error('Token verification failed:', error);
     return null;
   }
+}
+
+/**
+ * Generate a JWT token using jose library (Edge Runtime compatible)
+ */
+export async function generateToken(payload: JwtPayload): Promise<string> {
+  if (isStaticExport) {
+    // In static mode, just return a dummy token
+    return 'static-token';
+  }
+  
+  // Convert the secret to Uint8Array
+  const secretKey = new TextEncoder().encode(JWT_SECRET);
+  
+  // Create a new JWT with 1 hour expiration
+  const token = await new jose.SignJWT({ ...payload })
+    .setProtectedHeader({ alg: 'HS256' })
+    .setIssuedAt()
+    .setExpirationTime('1h')
+    .sign(secretKey);
+  
+  return token;
 }
