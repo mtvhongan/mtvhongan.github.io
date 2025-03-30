@@ -22,11 +22,17 @@ export const HeroBanner: React.FC = () => {
       alt: 'Thiết bị tự động hóa',
       link: '/may-tu-dong',
     },
+    // {
+    //   id: 2,
+    //   imageUrl: 'https://placehold.co/3780x1890/blue/white?text=Máy+xây+dựng',
+    //   alt: 'Máy xây dựng',
+    //   link: '/may-xay-dung',
+    // },
     {
       id: 2,
-      imageUrl: 'https://placehold.co/3780x1890/blue/white?text=Máy+xây+dựng',
-      alt: 'Máy xây dựng',
-      link: '/may-xay-dung',
+      imageUrl: 'https://placehold.co/3780x1890/blue/white?text=Phụ+tùng+và+phụ+liệu',
+      alt: 'Phụ tùng và phụ liệu',
+      link: '/phu-tung',
     },
     {
       id: 3,
