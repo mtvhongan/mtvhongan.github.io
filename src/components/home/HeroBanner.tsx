@@ -18,19 +18,19 @@ export const HeroBanner: React.FC = () => {
   const slides: Slide[] = [
     {
       id: 1,
-      imageUrl: 'https://placehold.co/1200x400/orange/white?text=Thiết+bị+tự+động+hóa',
+      imageUrl: 'https://gist.github.com/user-attachments/assets/da693859-b3fc-455e-9773-051ec3115844',
       alt: 'Thiết bị tự động hóa',
       link: '/may-tu-dong',
     },
     {
       id: 2,
-      imageUrl: 'https://placehold.co/1200x400/blue/white?text=Máy+xây+dựng',
+      imageUrl: 'https://placehold.co/3780x1890/blue/white?text=Máy+xây+dựng',
       alt: 'Máy xây dựng',
       link: '/may-xay-dung',
     },
     {
       id: 3,
-      imageUrl: 'https://placehold.co/1200x400/green/white?text=Máy+nông+nghiệp',
+      imageUrl: 'https://gist.github.com/user-attachments/assets/5d862fee-9994-4588-8007-728de14bfe91',
       alt: 'Máy nông nghiệp',
       link: '/may-nong-nghiep',
     },
@@ -60,7 +60,7 @@ export const HeroBanner: React.FC = () => {
   };
 
   return (
-    <div className="relative h-64 md:h-96 overflow-hidden">
+    <div className="relative w-full overflow-hidden" style={{ aspectRatio: '3780/1890' }}>
       {/* Slides */}
       <div 
         className="flex transition-transform duration-500 ease-in-out h-full"
@@ -90,7 +90,7 @@ export const HeroBanner: React.FC = () => {
       {/* Navigation Arrows */}
       <button
         onClick={goToPrevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/50 hover:bg-white/80 w-10 h-10 rounded-full flex items-center justify-center text-gray-700"
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/50 hover:bg-white/80 w-10 h-10 md:w-16 md:h-16 rounded-full flex items-center justify-center text-gray-700"
         aria-label="Previous slide"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -100,7 +100,7 @@ export const HeroBanner: React.FC = () => {
       
       <button
         onClick={goToNextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/50 hover:bg-white/80 w-10 h-10 rounded-full flex items-center justify-center text-gray-700"
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/50 hover:bg-white/80 w-10 h-10 md:w-16 md:h-16 rounded-full flex items-center justify-center text-gray-700"
         aria-label="Next slide"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -109,12 +109,12 @@ export const HeroBanner: React.FC = () => {
       </button>
 
       {/* Indicators */}
-      <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+      <div className="absolute bottom-4 md:bottom-8 left-0 right-0 flex justify-center space-x-2 md:space-x-4">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-colors ${
+            className={`w-3 h-3 md:w-4 md:h-4 rounded-full transition-colors ${
               currentSlide === index ? 'bg-blue-700' : 'bg-white/70'
             }`}
             aria-label={`Go to slide ${index + 1}`}
