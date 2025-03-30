@@ -1,0 +1,55 @@
+# robots.txt for https://www.hongan.com.vn
+# Last updated: March 30, 2025
+
+User-agent: *
+Allow: /
+
+# Prevent crawling of administrative areas (if you have any)
+Disallow: /admin/
+Disallow: /login/
+Disallow: /wp-admin/
+Disallow: /dashboard/
+Disallow: /private/
+Disallow: /cgi-bin/
+
+# Block crawling of temporary pages or development areas (if applicable)
+Disallow: /temp/
+Disallow: /dev/
+Disallow: /test/
+Disallow: /staging/
+
+# Prevent crawling of duplicate filtered/sorted content
+Disallow: /*?filter=
+Disallow: /*?sort=
+Disallow: /*?q=
+
+# Allow crawling of important site sections
+Allow: /chinh-sach/
+Allow: /lien-he/
+Allow: /may-nong-nghiep/
+Allow: /may-tu-dong/
+Allow: /may-xay-dung/
+Allow: /phu-tung/
+Allow: /tin-tuc/
+
+# Specify sitemap location
+Sitemap: https://www.hongan.com.vn/sitemap.xml
+
+# Optional: Instructions for specific bots
+# For Google's primary crawler
+User-agent: Googlebot
+Allow: /
+
+# For Google's image crawler
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /assets/images/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+
+# For Bing's crawler
+User-agent: Bingbot
+Allow: /

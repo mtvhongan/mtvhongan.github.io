@@ -30,7 +30,7 @@ export const HeroBanner: React.FC = () => {
     // },
     {
       id: 2,
-      imageUrl: 'https://placehold.co/3780x1890/blue/white?text=Phụ+tùng+và+phụ+liệu',
+      imageUrl: 'https://gist.github.com/user-attachments/assets/398e0220-f968-4481-bad6-a69fdad1193d',
       alt: 'Phụ tùng và phụ liệu',
       link: '/phu-tung',
     },
@@ -86,7 +86,7 @@ export const HeroBanner: React.FC = () => {
               <img 
                 src={slide.imageUrl}
                 alt={slide.alt}
-                className="w-full h-full object-cover"
+                className="w-full h-3/5 object-contain"
               />
             </div>
           </div>

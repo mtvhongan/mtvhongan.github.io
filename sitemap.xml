@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.hongan.com.vn/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Main sections based on your folder structure -->
+  <url>
+    <loc>https://www.hongan.com.vn/chinh-sach/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hongan.com.vn/lien-he/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hongan.com.vn/may-nong-nghiep/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.hongan.com.vn/may-tu-dong/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.hongan.com.vn/may-xay-dung/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.hongan.com.vn/phu-tung/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hongan.com.vn/tin-tuc/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Sub-pages for each category - you'll need to replace these with your actual pages -->
+  <!-- Agricultural Equipment Section -->
+  <url>
+    <loc>https://www.hongan.com.vn/may-nong-nghiep/may-keo/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hongan.com.vn/may-nong-nghiep/may-cay/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hongan.com.vn/may-nong-nghiep/may-gat/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Automatic Machine Section -->
+  <url>
+    <loc>https://www.hongan.com.vn/may-tu-dong/may-dong-goi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hongan.com.vn/may-tu-dong/may-san-xuat/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Construction Equipment Section -->
+  <url>
+    <loc>https://www.hongan.com.vn/may-xay-dung/may-xuc/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hongan.com.vn/may-xay-dung/may-ui/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hongan.com.vn/may-xay-dung/xe-tai/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Spare Parts Section -->
+  <url>
+    <loc>https://www.hongan.com.vn/phu-tung/phu-tung-may-nong-nghiep/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hongan.com.vn/phu-tung/phu-tung-may-xay-dung/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- News Section - Update these with actual article URLs -->
+  <url>
+    <loc>https://www.hongan.com.vn/tin-tuc/article1/</loc>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.hongan.com.vn/tin-tuc/article2/</loc>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.hongan.com.vn/tin-tuc/article3/</loc>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Policy Pages -->
+  <url>
+    <loc>https://www.hongan.com.vn/chinh-sach/bao-hanh/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hongan.com.vn/chinh-sach/van-chuyen/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hongan.com.vn/chinh-sach/thanh-toan/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>
