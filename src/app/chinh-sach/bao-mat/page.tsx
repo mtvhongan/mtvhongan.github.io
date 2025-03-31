@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
   return (
     <>
       <Header />
-      <PolicyLayout activePolicyId="bao-mat" disable>
+      <PolicyLayout activePolicyId="bao-mat">
         <div className="bg-white p-8 rounded-lg shadow">
           <h1 className="text-3xl font-bold text-gray-900 mb-6">Chính Sách Bảo Mật</h1>
           

@@ -15,7 +15,7 @@ export default function WarrantyPolicyPage() {
   return (
     <>
       <Header />
-      <PolicyLayout activePolicyId="bao-hanh" disable>
+      <PolicyLayout activePolicyId="bao-hanh">
         <div className="bg-white p-8 rounded-lg shadow">
           <h1 className="text-3xl font-bold text-gray-900 mb-6">Chính Sách Bảo Hành</h1>
           
