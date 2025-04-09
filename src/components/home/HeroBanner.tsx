@@ -18,7 +18,7 @@ export const HeroBanner: React.FC = () => {
   const slides: Slide[] = [
     {
       id: 1,
-      imageUrl: 'https://gist.github.com/user-attachments/assets/da693859-b3fc-455e-9773-051ec3115844',
+      imageUrl: 'https://gist.github.com/user-attachments/assets/8fd1dab3-83c6-4c99-925e-0322586ff676',
       alt: 'Thiết bị tự động hóa',
       link: '/may-tu-dong',
     },
@@ -30,7 +30,7 @@ export const HeroBanner: React.FC = () => {
     // },
     {
       id: 2,
-      imageUrl: 'https://gist.github.com/user-attachments/assets/398e0220-f968-4481-bad6-a69fdad1193d',
+      imageUrl: 'https://gist.github.com/user-attachments/assets/dc220be9-760a-4f87-a34a-c5ec1c26a5a4',
       alt: 'Phụ tùng và phụ liệu',
       link: '/phu-tung',
     },
