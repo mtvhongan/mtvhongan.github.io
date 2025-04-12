@@ -20,7 +20,7 @@ export default function Home() {
           
           <BrandLogos />
           
-          <ProductTabs />
+          <ProductTabs visible={false} />
           
           <section className="container mx-auto my-12 px-4">
             <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">

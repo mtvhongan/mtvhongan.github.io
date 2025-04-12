@@ -4,7 +4,11 @@ import React, { useState } from 'react';
 
 import { ProductCard } from '../ui/ProductCard';
 
-export const ProductTabs: React.FC = () => {
+interface ProductTabsProps {
+  visible?: boolean; // Add the visible property with an optional flag
+}
+
+export const ProductTabs: React.FC<ProductTabsProps> = ({ visible = true }) => {
   const [activeTab, setActiveTab] = useState<'discounted' | 'bestsellers'>('discounted');
 
   // Example discounted products data
@@ -86,6 +90,11 @@ export const ProductTabs: React.FC = () => {
       discountPercentage: 6,
     },
   ];
+
+  // If not visible, don't render anything
+  if (!visible) {
+    return null;
+  }
 
   return (
     <div className="container mx-auto my-8">
