@@ -57,7 +57,7 @@ export default function AutomationEquipmentPage() {
       <Header />
       <AutomationEquipmentLayout>
         {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {products.map((item) => (
             <div key={item.id} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
               <div className="relative">
@@ -92,7 +92,7 @@ export default function AutomationEquipmentPage() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </AutomationEquipmentLayout>
       <Footer />
     </>
