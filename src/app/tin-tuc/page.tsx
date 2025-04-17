@@ -17,6 +17,14 @@ const TinTucPage = () => {
       category: 'Máy móc',
       imagePlaceholder: '/images/placeholder-lawn-mower.jpg',
     },
+    {
+      id: 'dau-nhot',
+      title: 'CÁC LOẠI NHỚT MÁY BẠN CẦN BIẾT',
+      date: '17/04/2025',
+      excerpt: 'Dầu nhớt đóng vai trò quan trọng trong việc bảo vệ động cơ và kéo dài tuổi thọ của máy móc. Tìm hiểu các loại nhớt phù hợp cho từng loại động cơ.',
+      category: 'Bảo dưỡng',
+      imagePlaceholder: '/images/placeholder-motor-oil.jpg',
+    },
     // You can add other existing blog posts here
   ];
 
