@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
           <div>
             <h3 className="text-xl font-bold mb-4">MTV HỒNG AN</h3>
-            <p className="mb-2">Địa chỉ văn phòng: L17-11, tầng 17, Tòa nhà Vincom Center, số 72 Lê Thánh Tôn, P. Bến Nghé, Q.1, TP.HCM</p>
+            <p className="mb-2">Địa chỉ văn phòng: L17-11, Tầng 17, Tòa nhà Vincom Center, 72 Lê Thánh Tôn, Phường Sài Gòn, TP.HCM</p>
             <p className="mb-2">Tel: <a href="tel:0328162203" className="text-blue-600 hover:underline">0328162203</a></p>
             <p className="mb-2">Email: <a href="mailto:mtvhongan@gmail.com" className="text-blue-600 hover:underline">mtvhongan@gmail.com</a></p>
             <p className="mb-2">Giờ làm việc: Thứ 2 - Thứ 7: 8:00 - 17:30</p>

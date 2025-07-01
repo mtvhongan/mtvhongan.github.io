@@ -59,7 +59,7 @@ export default function ContactPage() {
                       </svg>
                     </div>
                     <div className="ml-3 text-base text-gray-500">
-                      <p>L17-11, tầng 17, Tòa nhà Vincom Center, số 72 Lê Thánh Tôn, P. Bến Nghé, Q.1</p>
+                      <p>L17-11, Tầng 17, Tòa nhà Vincom Center, 72 Lê Thánh Tôn, Phường Sài Gòn</p>
                       <p className="mt-1">Thành Phố Hồ Chí Minh, Việt Nam</p>
                     </div>
                   </div>
