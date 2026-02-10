@@ -34,12 +34,12 @@ export const HeroBanner: React.FC = () => {
       alt: 'Phụ tùng và phụ liệu',
       link: '/phu-tung',
     },
-    // {
-    //   id: 3,
-    //   imageUrl: 'https://gist.github.com/user-attachments/assets/5d862fee-9994-4588-8007-728de14bfe91',
-    //   alt: 'Máy nông nghiệp',
-    //   link: '/may-nong-nghiep',
-    // },
+    {
+      id: 3,
+      imageUrl: 'https://gist.github.com/user-attachments/assets/5d862fee-9994-4588-8007-728de14bfe91',
+      alt: 'Máy nông nghiệp',
+      link: '/may-nong-nghiep',
+    },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);

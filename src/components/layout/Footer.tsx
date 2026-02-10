@@ -39,7 +39,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li><Link href="/may-tu-dong" className="hover:text-green-300 transition duration-300">Thiết bị tự động hóa</Link></li>
               <li><Link href="/may-xay-dung" className="hover:text-green-300 transition duration-300">Máy xây dựng</Link></li>
-              {/* <li><Link href="/may-nong-nghiep" className="hover:text-green-300 transition duration-300">Máy nông nghiệp</Link></li> */}
+              <li><Link href="/may-nong-nghiep" className="hover:text-green-300 transition duration-300">Máy nông nghiệp</Link></li>
               {/* <li><Link href="/may-xoi-dat" className="hover:text-green-300 transition duration-300">Máy xới đất</Link></li>
               <li><Link href="/may-khoan" className="hover:text-green-300 transition duration-300">Máy khoan</Link></li>
               <li><Link href="/phu-kien" className="hover:text-green-300 transition duration-300">Phụ kiện & phụ tùng</Link></li> */}
